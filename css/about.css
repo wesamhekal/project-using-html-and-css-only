@@ -1,0 +1,48 @@
+.about {}
+
+.about-content {
+
+}
+
+.about-item {
+
+
+	width: 30%;
+	text-align: center;
+	border: 1px solid #e8e8e8;
+	padding: 50px 20px;
+}
+
+.about-item:hover .about-item-title {
+	color: var(--whitecolor);
+}
+
+.about-item.mg {
+	margin: 0 5%;
+}
+
+.mg-d {
+	margin-bottom: 10px;
+}
+
+.about-item .icon {
+	color: var(--maincolor);
+}
+
+.about-item-title {
+	text-transform: capitalize;
+	transition: color 0.5s;
+
+}
+
+.about-item-desc {
+	line-height: 1.5;
+	color: var(--graycolor);
+}
+
+.about-item-link {
+	color: var(--maincolor);
+	text-transform: capitalize;
+
+}
+

@@ -1,0 +1,85 @@
+.header { 
+	background: rgba(0, 0, 0, .4);
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+}
+
+.header .logo {
+	width: 40%;
+}
+
+.header .logo img {
+	width: 20%;
+	margin-top: 15px;
+}
+
+.header .nav {
+	list-style: none;
+	width: 60%;
+	
+	text-align: right;
+}
+
+.header .nav>li {
+	display: inline-block;
+
+	text-align: right;
+}
+
+.header .nav>li>a {
+	color: #fff;
+	font-size: 15px;
+	padding: 15px;
+	display: block;
+	padding: 30px 15px;
+}
+
+.header .nav>li>a:after,
+.header .nav>li>a.active:after {
+	content: "";
+	width: 0;
+	display: block;
+	height: 3px;
+	background-color: var(--maincolor);
+	transition: width .5s;
+	margin: 2px;
+}
+
+.header .nav>li>a:hover:after {
+	width: 100%;
+}
+
+.header .nav>li>a.active:after {
+	width: 100%;
+}
+
+.dropdown {
+	position: relative;
+}
+
+.dropdown-menu {
+	position: absolute;
+	background-color: var(--maincolor);
+	width: 150px;
+	text-align: center;
+	left: -50%;
+	top: 70%;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.5s, visibility;
+}
+
+.dropdown-menu a {
+	color: var(--whitecolor);
+	display: block;
+	padding: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+	opacity: 1;
+	visibility: visible;
+}
+
+.Blogheadr{background: #fff;}
+.header .nav>li>.color{color: black;}
